@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Course } from './models/course.model'
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ng-style-animations';
+
+  courses: Course[] = [
+    { title: 'Angular Course 1', isActive: false },
+    { title: 'Angular Course 2', isActive: false },
+    { title: 'Angular Course 3', isActive: false }
+  ]
 }
